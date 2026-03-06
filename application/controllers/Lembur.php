@@ -2570,12 +2570,6 @@ class Lembur extends CI_Controller
                 $dept = $this->db->get_where('karyawan_dept', ['id' => $person->dept_id])->row();
                 $sect = $this->db->get_where('karyawan_sect', ['id' => $person->sect_id])->row();
 
-                //     if ($row->status=='9')
-                //     {
-                //         $actions = "<a href='". base_url('lembur/laporan_lembur/').$row->id."' class='btn btn-link btn-warning btn-just-icon edit' target='_blank'><i class='material-icons'>dvr</i></a>";
-                //     }else{
-                //         $actions = "<a href='#' class='btn btn-link btn-warning btn-just-icon edit disabled'><i class='material-icons'>dvr</i></a>";
-                //     }
                 if (empty($row->admin_ppic)){
                     $admin_ppic = '-';
                     $tgl_admin_ppic = '-';
